@@ -1,18 +1,17 @@
 import React from "react";
 import './App.css'
-import Card from "./components/Card.jsx";
+import Header from "./components/Header.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Main from "./components/Main.jsx";
+
 function App() {
-
-
-  return (
-      <div>
-        <Card title="Title 1" />
-
-        <Card text="Text 2" />
-
-        <Card title="Title 3" text="Text 3" />
-      </div>
-  )
+    return (
+        <div className="app">
+            <Header />
+            <Navbar />
+            <Main />
+        </div>
+    );
 }
 
-export default App
+export default App;
