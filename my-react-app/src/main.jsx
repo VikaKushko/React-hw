@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Root from './Components/Root.jsx';
+import App from './App.jsx'
+import Root from './Components/ListGroup.jsx'
 import './index.css';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
+        <App />
         <Root />
     </React.StrictMode>,
 );

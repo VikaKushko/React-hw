@@ -2,29 +2,24 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+
+
 }
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.list-group {
+  padding: 0;
+  list-style: none;
 }
-.alert{
-  margin: 10px;
-  opacity: .5;
+
+.list-group-item {
+  padding: 1px 100px 1px 100px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
-.alert-primary {
+.list-group-item:hover {
+  background-color: #535bf2;
   color: #f9f9f9;
-  background-color: blue;
 }
 
-.alert-success {
-  background-color: green;
+.list-group-item:last-child {
+  margin-bottom: 0;
 }
-
-.alert-danger {
-  background-color: red;
-}
-
-

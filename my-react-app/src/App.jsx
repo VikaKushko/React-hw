@@ -1,15 +1,25 @@
 import React, { Component } from 'react';
 import './App.css';
 
-class App extends Component {
+class App extends Component{
     render() {
-        const { text, type } = this.props;
-        const alertClass = `alert alert-${type}`;
+        return(
+            <ul className='list-group'>
+                {React.Children.map(this.props.children, (child, index) => (
+                    <li key={index} className="list-group-item">
+                        {child}
+                    </li>
+                ))}
+            </ul>
 
-        return (
-            <div className={alertClass} role="alert">{text}</div>
+
+
         );
     }
 }
 
 export default App;
+
+
+
+
