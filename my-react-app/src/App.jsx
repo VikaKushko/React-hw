@@ -1,17 +1,15 @@
-import React from "react";
-import './App.css'
-import Header from "./components/Header.jsx";
-import Navbar from "./components/Navbar.jsx";
-import Main from "./components/Main.jsx";
+import React, { Component } from 'react';
+import './App.css';
 
-function App() {
-    return (
-        <div className="app">
-            <Header />
-            <Navbar />
-            <Main />
-        </div>
-    );
+class App extends Component {
+    render() {
+        const { text, type } = this.props;
+        const alertClass = `alert alert-${type}`;
+
+        return (
+            <div className={alertClass} role="alert">{text}</div>
+        );
+    }
 }
 
 export default App;
