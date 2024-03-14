@@ -1,29 +1,15 @@
-import React, {useState} from 'react';
+import React from "react";
+import Progress from "./Components/Progress.jsx";
 import './App.css';
-const BtnGroup = () => {
-    const [activeBtn, setActiveBtn] = useState(null);
 
-    const handleBtnClick = (btnId) => {
-        setActiveBtn(btnId);
-    };
-
+const App = () => {
     return (
         <div>
-            <button
-                onClick={() => handleBtnClick(1)}
-                className={activeBtn === 1 ? 'active' : ''}
-            >
-                Button 1
-            </button>
-            <button
-                onClick={() => handleBtnClick(2)}
-                className={activeBtn === 2 ? 'active' : ''}
-            >
-                Button 2
-            </button>
+            <h1>Kushko Vika</h1>
+            <Progress percentage={40} />
+            <Progress percentage={75} />
         </div>
     );
 };
 
-export default BtnGroup;
-
+export default App;
