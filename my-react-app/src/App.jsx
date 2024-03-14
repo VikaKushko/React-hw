@@ -1,25 +1,29 @@
-import React, { Component } from 'react';
+import React, {useState} from 'react';
 import './App.css';
+const BtnGroup = () => {
+    const [activeBtn, setActiveBtn] = useState(null);
 
-class App extends Component{
-    render() {
-        return(
-            <ul className='list-group'>
-                {React.Children.map(this.props.children, (child, index) => (
-                    <li key={index} className="list-group-item">
-                        {child}
-                    </li>
-                ))}
-            </ul>
+    const handleBtnClick = (btnId) => {
+        setActiveBtn(btnId);
+    };
 
+    return (
+        <div>
+            <button
+                onClick={() => handleBtnClick(1)}
+                className={activeBtn === 1 ? 'active' : ''}
+            >
+                Button 1
+            </button>
+            <button
+                onClick={() => handleBtnClick(2)}
+                className={activeBtn === 2 ? 'active' : ''}
+            >
+                Button 2
+            </button>
+        </div>
+    );
+};
 
-
-        );
-    }
-}
-
-export default App;
-
-
-
+export default BtnGroup;
 
