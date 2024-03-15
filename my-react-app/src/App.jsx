@@ -1,15 +1,28 @@
 import React from "react";
+import Carousel from './components/Carousel.jsx'
 import './App.css'
-import Header from "./components/Header.jsx";
-import Navbar from "./components/Navbar.jsx";
-import Main from "./components/Main.jsx";
 
-function App() {
+
+
+const App = () => {
+    const images = [
+        './src/assets/cat.jpeg',
+        './src/assets/dog.jpeg',
+        './src/assets/dogBlack.jpeg',
+        './src/assets/pandy.jpeg',
+        './src/assets/1.jpeg',
+        './src/assets/2.png',
+        './src/assets/2.jpeg',
+        './src/assets/3.jpeg',
+        './src/assets/4.jpeg',
+        './src/assets/5.jpeg',
+        './src/assets/6.avif',
+
+    ];
+
     return (
-        <div className="app">
-            <Header />
-            <Navbar />
-            <Main />
+        <div>
+            <Carousel images={images} />
         </div>
     );
 }
