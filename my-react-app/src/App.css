@@ -4,3 +4,29 @@
   padding: 2rem;
   text-align: center;
 }
+.formContainer{
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 40px;
+  color: #1a1a1a;
+  background: linear-gradient(70deg, #40E0D0, #6495ED);
+  text-align: left;
+}
+label{
+  padding-right: 15px;
+}
+input{
+  margin: 20px;
+  padding: 10px;
+}
+.text{
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 40px;
+  color: #1a1a1a;
+  background: linear-gradient(70deg, #40E0D0, #6495ED);
+  text-align: left;
+}
+button:hover {
+  background: linear-gradient(70deg, plum, pink);
+}
